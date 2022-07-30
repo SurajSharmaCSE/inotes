@@ -1,0 +1,5 @@
+Day_4: Creating Routes & Schema for Storing Notes & Users
+      4.1: Creating Mongoose ModelsWe are creating a Models folder to store the Mongoose Models. A Mongoose model is a wrapper 
+           on the Mongoose schema. A Mongoose schema defines the structure of the document, default values
+           ,validators, etc., whereas a Mongoose model provides an interface to the database for creating
+           ,querying, updating, deleting records, etc.

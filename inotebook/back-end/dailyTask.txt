@@ -1,2 +1,0 @@
-vd - 43 notebook db & express server setup
-vd - 45 post method aaply in 

@@ -1,0 +1,15 @@
+Backend Part ---------
+(i)- models - Notes, user 
+(ii)- routes - auth,Notes
+(iii) - index.js
+
+video 46 -> Adding validation like you are note enter invalide or duplicate pass word or email
+            this functionality achive by express-validator pakage , simply install this in 
+            terminal and add some peace of code 
+            -------
+             body('name', 'Enter a valid name').isLength({ min: 3 }),
+             body('email', 'Enter a valid email').isEmail(),
+             body('password', 'Password must be atleast 5 characters').isLength({ min: 5 }),
+            -------
+
+video 47 -> 

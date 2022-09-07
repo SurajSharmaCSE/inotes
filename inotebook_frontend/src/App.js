@@ -1,20 +1,33 @@
 import './App.css';
-import {BrowserRouter,Routes,Route} from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route
+} from "react-router-dom";
 import Navbar from './components/Navbar';
 import { Home } from './components/Home';
 import About from './components/About';
+import NoteState from './context/notes/NotesState';
+import { Alert } from './components/Alert';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
-       <Navbar/>
-        < Routes>  
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-        </ Routes>
-      </BrowserRouter>
+      <NoteState>
+       <Router>
+          <Navbar />
+          <Alert message="This is amazing React course" />
+          <div className="container">
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="about" element={<About />}/>
+            </Routes>
+          </div>
+        </Router>
+      </NoteState>
     </>
   );
 }
+
 export default App;
+

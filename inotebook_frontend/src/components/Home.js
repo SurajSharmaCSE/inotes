@@ -1,5 +1,5 @@
 import React from 'react'
-// u
+  
 export const Home = () => {
     return (
         <div>
@@ -7,4 +7,3 @@ export const Home = () => {
         </div>
     )
 }
-export default Home
